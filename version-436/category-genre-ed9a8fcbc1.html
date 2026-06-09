@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真人秀 - 分类频道 - 日韩热播视频</title>
+  <meta name="description" content="真人秀 分类收录相关影片，可继续使用搜索、地区、类型和年份筛选。">
+  <meta name="keywords" content="日韩,热播视频,在线高清,免费观看,热门排行榜,精选,小众">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="真人秀 - 分类频道 - 日韩热播视频">
+  <meta property="og:description" content="真人秀 分类收录相关影片，可继续使用搜索、地区、类型和年份筛选。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/movie-data.js" defer></script>
+  <script src="./assets/js/site.js" defer></script>
+</head>
+<body>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="日韩热播视频首页">
+      <span class="brand-icon" aria-hidden="true">▶</span>
+      <span class="brand-copy">
+        <strong>日韩热播视频</strong>
+        <em>在线高清 · 免费观看 · 热门排行</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link active" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link" href="./all-movies.html">片库</a>
+      <button class="nav-search" type="button" data-open-search aria-label="搜索影片">搜索</button>
+    </nav>
+    <button class="mobile-menu-toggle" type="button" data-menu-toggle aria-label="展开菜单">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" data-mobile-nav aria-label="移动端导航">
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./ranking.html">排行榜</a>
+    <a href="./all-movies.html">片库</a>
+    <button type="button" data-open-search>搜索影片</button>
+  </nav>
+</header>
+<div class="search-drawer" data-search-drawer aria-hidden="true">
+  <div class="search-panel">
+    <button class="search-close" type="button" data-close-search aria-label="关闭搜索">×</button>
+    <h2>搜索影片</h2>
+    <p>输入片名、地区、类型、年份、题材或关键词，快速定位影片详情页。</p>
+    <label class="search-input-wrap">
+      <span>影片搜索</span>
+      <input type="search" data-global-search-input placeholder="搜索影片、地区、类型、标签...">
+    </label>
+    <div class="search-results" data-global-search-results></div>
+  </div>
+</div>
+<main>
+  <section class="page-hero small-hero">
+    <div class="container">
+      <span class="section-kicker">Category</span>
+      <h1>真人秀</h1>
+      <p>真人秀 分类收录相关影片，可继续使用搜索、地区、类型和年份筛选。</p>
+    </div>
+  </section>
+
+  <section class="container section-block">
+    <div class="catalog-filter" data-filter-scope="category">
+  <label>
+    <span>搜索</span>
+    <input type="search" data-filter-text placeholder="输入片名、地区、类型、标签">
+  </label>
+  <label>
+    <span>地区</span>
+    <select data-filter-region>
+      <option value="">全部地区</option>
+      <option value="中国大陆">中国大陆</option>
+<option value="韩国">韩国</option>
+<option value="中国台湾">中国台湾</option>
+<option value="中国香港">中国香港</option>
+<option value="中国香港 / 中国大陆">中国香港 / 中国大陆</option>
+<option value="中国">中国</option>
+    </select>
+  </label>
+  <label>
+    <span>类型</span>
+    <select data-filter-type>
+      <option value="">全部类型</option>
+      <option value="综艺">综艺</option>
+<option value="综艺 / 真人秀">综艺 / 真人秀</option>
+<option value="综艺 / 纪录片">综艺 / 纪录片</option>
+<option value="综艺 / 电影">综艺 / 电影</option>
+    </select>
+  </label>
+  <label>
+    <span>年份</span>
+    <select data-filter-year>
+      <option value="">全部年份</option>
+      <option value="2025">2025</option>
+<option value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2020-2024">2020-2024</option>
+<option value="2010-2019">2010-2019</option>
+<option value="2000-2009">2000-2009</option>
+<option value="1990-1999">1990-1999</option>
+    </select>
+  </label>
+  <button class="btn btn-outline" type="button" data-filter-reset>重置筛选</button>
+</div>
+    <div class="movie-grid catalog-grid" data-filter-list="category">
+      <article class="movie-card" data-card data-title="超棒的我们" data-region="中国大陆" data-type="综艺" data-year="2024" data-keywords="超棒的我们 中国大陆 综艺 真人秀, 青春, 竞技 2024 偶像 团综 户外挑战 成长">
+  <a class="poster-link" href="./movie-0708.html" aria-label="查看超棒的我们">
+    <img src="./108.jpg" alt="超棒的我们封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-0708.html">超棒的我们</a></h3>
+    <p>十二位少年偶像被迫接管一家濒临倒闭的游乐园，每周挑战一项离谱的极限运营任务。</p>
+    <div class="card-tags">
+      <span class="tag">偶像</span>
+<span class="tag">团综</span>
+<span class="tag">户外挑战</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="阿公阿嬷超速配" data-region="中国台湾" data-type="综艺" data-year="2025" data-keywords="阿公阿嬷超速配 中国台湾 综艺 真人秀, 恋爱, 老年 2025 黄昏恋 代际沟通 感人">
+  <a class="poster-link" href="./movie-1180.html" aria-label="查看阿公阿嬷超速配">
+    <img src="./130.jpg" alt="阿公阿嬷超速配封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国台湾</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1180.html">阿公阿嬷超速配</a></h3>
+    <p>一群丧偶或离异的银发族在子女的安排下参加恋爱综艺，寻找人生后半场的灵魂伴侣。</p>
+    <div class="card-tags">
+      <span class="tag">黄昏恋</span>
+<span class="tag">代际沟通</span>
+<span class="tag">感人</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="既然出生就环游音乐" data-region="韩国" data-type="综艺 / 纪录片" data-year="2025" data-keywords="既然出生就环游音乐 韩国 综艺 / 纪录片 音乐 / 旅行 / 真人秀 2025 环球旅行 街头表演 独立音乐 治愈 素人">
+  <a class="poster-link" href="./movie-1269.html" aria-label="查看既然出生就环游音乐">
+    <img src="./69.jpg" alt="既然出生就环游音乐封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>韩国</span>
+      <span>综艺 / 纪录片</span>
+    </div>
+    <h3><a href="./movie-1269.html">既然出生就环游音乐</a></h3>
+    <p>七位被生活打败的素人音乐人，带着全部家当和一把吉他，用街头卖唱的钱完成环游世界的梦想。</p>
+    <div class="card-tags">
+      <span class="tag">环球旅行</span>
+<span class="tag">街头表演</span>
+<span class="tag">独立音乐</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="娱乐精华3" data-region="中国大陆" data-type="综艺" data-year="2024" data-keywords="娱乐精华3 中国大陆 综艺 真人秀，喜剧 2024 搞笑 明星 挑战 剪辑 幕后">
+  <a class="poster-link" href="./movie-1500.html" aria-label="查看娱乐精华3">
+    <img src="./150.jpg" alt="娱乐精华3封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1500.html">娱乐精华3</a></h3>
+    <p>第三季把摄像机对准娱乐公司内部，明星们必须靠“打工”保住自己的热搜位。</p>
+    <div class="card-tags">
+      <span class="tag">搞笑</span>
+<span class="tag">明星</span>
+<span class="tag">挑战</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="隨懿深度行" data-region="中国香港" data-type="综艺" data-year="2024" data-keywords="隨懿深度行 中国香港 综艺 真人秀 / 人文 / 旅行 2024 香港 深度游 素人故事 城市文化 夜行">
+  <a class="poster-link" href="./movie-0987.html" aria-label="查看隨懿深度行">
+    <img src="./87.jpg" alt="隨懿深度行封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.9</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国香港</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-0987.html">隨懿深度行</a></h3>
+    <p>每晚凌晨两点，主持人与一位神秘嘉宾在香港最不起眼的街角，遇见这座城市真正的灵魂。</p>
+    <div class="card-tags">
+      <span class="tag">香港</span>
+<span class="tag">深度游</span>
+<span class="tag">素人故事</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="两天一夜第四季" data-region="韩国" data-type="综艺" data-year="2025" data-keywords="两天一夜第四季 韩国 综艺 真人秀 / 喜剧 2025 旅行 游戏 福不福 野生">
+  <a class="poster-link" href="./movie-0397.html" aria-label="查看两天一夜第四季">
+    <img src="./97.jpg" alt="两天一夜第四季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.6</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>韩国</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-0397.html">两天一夜第四季</a></h3>
+    <p>新成员加入后，节目组搞了个大事情：停掉所有车辆，他们必须“滚铁环”从首尔走到釜山。</p>
+    <div class="card-tags">
+      <span class="tag">旅行</span>
+<span class="tag">游戏</span>
+<span class="tag">福不福</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="哎呀好身材第二季" data-region="中国大陆" data-type="综艺 / 真人秀" data-year="2020" data-keywords="哎呀好身材第二季 中国大陆 综艺 / 真人秀 真人秀 / 运动 / 生活 2020 减肥 明星健身 搞笑 自律 健康">
+  <a class="poster-link" href="./movie-1224.html" aria-label="查看哎呀好身材第二季">
+    <img src="./24.jpg" alt="哎呀好身材第二季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.5</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2020</span>
+      <span>中国大陆</span>
+      <span>综艺 / 真人秀</span>
+    </div>
+    <h3><a href="./movie-1224.html">哎呀好身材第二季</a></h3>
+    <p>四位胖明星签下“对赌协议”：减一斤奖一万，涨一斤罚一万，结果第一周就有人暴瘦十斤——饿的。</p>
+    <div class="card-tags">
+      <span class="tag">减肥</span>
+<span class="tag">明星健身</span>
+<span class="tag">搞笑</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="喜剧者联盟" data-region="中国大陆" data-type="综艺 / 电影" data-year="2016" data-keywords="喜剧者联盟 中国大陆 综艺 / 电影 喜剧 / 真人秀 2016 脱口秀 喜剧厂牌 pk 联盟 剧场">
+  <a class="poster-link" href="./movie-1688.html" aria-label="查看喜剧者联盟">
+    <img src="./38.jpg" alt="喜剧者联盟封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2016</span>
+      <span>中国大陆</span>
+      <span>综艺 / 电影</span>
+    </div>
+    <h3><a href="./movie-1688.html">喜剧者联盟</a></h3>
+    <p>六家顶级喜剧厂牌组建联盟，但第一个任务就是：用喜剧杀死喜剧。</p>
+    <div class="card-tags">
+      <span class="tag">脱口秀</span>
+<span class="tag">喜剧厂牌</span>
+<span class="tag">PK</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="披荆斩棘第二季" data-region="中国大陆" data-type="综艺" data-year="2024" data-keywords="披荆斩棘第二季 中国大陆 综艺 真人秀, 竞技, 音乐 2024 舞台竞演 跨界合作 中年励志">
+  <a class="poster-link" href="./movie-1539.html" aria-label="查看披荆斩棘第二季">
+    <img src="./39.jpg" alt="披荆斩棘第二季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1539.html">披荆斩棘第二季</a></h3>
+    <p>34位不同领域的男性艺人重返舞台，通过五轮激烈竞演争夺最终的荣耀团席位。</p>
+    <div class="card-tags">
+      <span class="tag">舞台竞演</span>
+<span class="tag">跨界合作</span>
+<span class="tag">中年励志</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="喜剧之王单口季第二季" data-region="中国大陆" data-type="综艺" data-year="2025" data-keywords="喜剧之王单口季第二季 中国大陆 综艺 喜剧，真人秀，竞技 2025 脱口秀 比赛 段子 生活 搞笑">
+  <a class="poster-link" href="./movie-1708.html" aria-label="查看喜剧之王单口季第二季">
+    <img src="./58.jpg" alt="喜剧之王单口季第二季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1708.html">喜剧之王单口季第二季</a></h3>
+    <p>来自各行各业的素人脱口秀爱好者同台竞技，用笑声解构生活，争夺“喜剧之王”桂冠。</p>
+    <div class="card-tags">
+      <span class="tag">脱口秀</span>
+<span class="tag">比赛</span>
+<span class="tag">段子</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="奔跑吧！勇敢的女人们国语" data-region="中国香港 / 中国大陆" data-type="综艺" data-year="2025" data-keywords="奔跑吧！勇敢的女人们国语 中国香港 / 中国大陆 综艺 真人秀 / 冒险 2025 全女性阵容 极限挑战 荒野求生 中年女星 逆风翻盘">
+  <a class="poster-link" href="./movie-1227.html" aria-label="查看奔跑吧！勇敢的女人们国语">
+    <img src="./27.jpg" alt="奔跑吧！勇敢的女人们国语封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.7</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国香港 / 中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1227.html">奔跑吧！勇敢的女人们国语</a></h3>
+    <p>八位平均年龄45岁的女艺人被扔到无人岛，节目组只给了一句话：“请证明你们还没有过气。”</p>
+    <div class="card-tags">
+      <span class="tag">全女性阵容</span>
+<span class="tag">极限挑战</span>
+<span class="tag">荒野求生</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="向往的生活第六季" data-region="中国大陆" data-type="综艺 / 真人秀" data-year="2024" data-keywords="向往的生活第六季 中国大陆 综艺 / 真人秀 真人秀 / 生活 / 治愈 2024 慢综艺 海边 蘑菇屋 老友重聚 养老">
+  <a class="poster-link" href="./movie-0474.html" aria-label="查看向往的生活第六季">
+    <img src="./24.jpg" alt="向往的生活第六季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.7</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>综艺 / 真人秀</span>
+    </div>
+    <h3><a href="./movie-0474.html">向往的生活第六季</a></h3>
+    <p>蘑菇屋搬到热带海岛，但这次没有飞行嘉宾，五位常驻要在无人岛上靠自己生存30天。</p>
+    <div class="card-tags">
+      <span class="tag">慢综艺</span>
+<span class="tag">海边</span>
+<span class="tag">蘑菇屋</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="加康加年味第三季" data-region="中国大陆" data-type="综艺" data-year="2025" data-keywords="加康加年味第三季 中国大陆 综艺 真人秀/文化/喜剧 2025 年俗 乡村体验 明星下乡 搞笑挑战 非遗">
+  <a class="poster-link" href="./movie-0625.html" aria-label="查看加康加年味第三季">
+    <img src="./25.jpg" alt="加康加年味第三季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.6</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-0625.html">加康加年味第三季</a></h3>
+    <p>六位明星深入中国最神奇的村庄，用七天时间复原一门濒临失传的千年绝技——“打铁花”，迎接一个没有硝烟的新年。</p>
+    <div class="card-tags">
+      <span class="tag">年俗</span>
+<span class="tag">乡村体验</span>
+<span class="tag">明星下乡</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="宝贝的新朋友" data-region="中国大陆" data-type="综艺" data-year="2025" data-keywords="宝贝的新朋友 中国大陆 综艺 真人秀 2025 萌娃 老人 代际 治愈">
+  <a class="poster-link" href="./movie-1900.html" aria-label="查看宝贝的新朋友">
+    <img src="./100.jpg" alt="宝贝的新朋友封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.6</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1900.html">宝贝的新朋友</a></h3>
+    <p>四位退休老人和四位留守儿童互换生活，爷爷住进村小，孩子住进养老院。</p>
+    <div class="card-tags">
+      <span class="tag">萌娃</span>
+<span class="tag">老人</span>
+<span class="tag">代际</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="田间的少年" data-region="中国大陆" data-type="综艺" data-year="2024" data-keywords="田间的少年 中国大陆 综艺 真人秀 2024 慢生活 农耕 少年成长">
+  <a class="poster-link" href="./movie-0944.html" aria-label="查看田间的少年">
+    <img src="./44.jpg" alt="田间的少年封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.5</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-0944.html">田间的少年</a></h3>
+    <p>七位城市问题少年被送到东北农村，用一年的时间种出十吨水稻才能回家。</p>
+    <div class="card-tags">
+      <span class="tag">慢生活</span>
+<span class="tag">农耕</span>
+<span class="tag">少年成长</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="极限挑战第八季" data-region="中国" data-type="综艺" data-year="2023" data-keywords="极限挑战第八季 中国 综艺 真人秀， 喜剧 2023 户外竞技 烧脑 男人帮 反转">
+  <a class="poster-link" href="./movie-1689.html" aria-label="查看极限挑战第八季">
+    <img src="./39.jpg" alt="极限挑战第八季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>中国</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1689.html">极限挑战第八季</a></h3>
+    <p>男人帮穿越进大型实景剧本杀，每期都要在 NPC 里找出那个“内鬼”。</p>
+    <div class="card-tags">
+      <span class="tag">户外竞技</span>
+<span class="tag">烧脑</span>
+<span class="tag">男人帮</span>
+    </div>
+  </div>
+</article>
+    </div>
+    <p class="empty-state" data-empty-state hidden>没有找到匹配的影片。</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html">日韩热播视频</a>
+      <p>本页面整合了丰富的日韩影视资源，涵盖高清播放、免费资源和最新电影，每日更新海量内容，为用户打造优质的追剧体验。</p>
+    </div>
+    <div>
+      <h3>快速入口</h3>
+      <a href="./categories.html">分类浏览</a>
+      <a href="./ranking.html">热门排行榜</a>
+      <a href="./all-movies.html">完整片库</a>
+    </div>
+    <div>
+      <h3>频道服务</h3>
+      <a href="./about.html">关于频道</a>
+      <a href="./support.html">服务支持</a>
+      <a href="./copyright.html">版权声明</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 日韩热播视频 · 高清影视内容频道</div>
+</footer>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

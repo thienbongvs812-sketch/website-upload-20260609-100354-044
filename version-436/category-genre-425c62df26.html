@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音乐 - 分类频道 - 日韩热播视频</title>
+  <meta name="description" content="音乐 分类收录相关影片，可继续使用搜索、地区、类型和年份筛选。">
+  <meta name="keywords" content="日韩,热播视频,在线高清,免费观看,热门排行榜,精选,小众">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="音乐 - 分类频道 - 日韩热播视频">
+  <meta property="og:description" content="音乐 分类收录相关影片，可继续使用搜索、地区、类型和年份筛选。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/movie-data.js" defer></script>
+  <script src="./assets/js/site.js" defer></script>
+</head>
+<body>
+<header class="site-header" data-site-header>
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="日韩热播视频首页">
+      <span class="brand-icon" aria-hidden="true">▶</span>
+      <span class="brand-copy">
+        <strong>日韩热播视频</strong>
+        <em>在线高清 · 免费观看 · 热门排行</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link active" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link" href="./all-movies.html">片库</a>
+      <button class="nav-search" type="button" data-open-search aria-label="搜索影片">搜索</button>
+    </nav>
+    <button class="mobile-menu-toggle" type="button" data-menu-toggle aria-label="展开菜单">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" data-mobile-nav aria-label="移动端导航">
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./ranking.html">排行榜</a>
+    <a href="./all-movies.html">片库</a>
+    <button type="button" data-open-search>搜索影片</button>
+  </nav>
+</header>
+<div class="search-drawer" data-search-drawer aria-hidden="true">
+  <div class="search-panel">
+    <button class="search-close" type="button" data-close-search aria-label="关闭搜索">×</button>
+    <h2>搜索影片</h2>
+    <p>输入片名、地区、类型、年份、题材或关键词，快速定位影片详情页。</p>
+    <label class="search-input-wrap">
+      <span>影片搜索</span>
+      <input type="search" data-global-search-input placeholder="搜索影片、地区、类型、标签...">
+    </label>
+    <div class="search-results" data-global-search-results></div>
+  </div>
+</div>
+<main>
+  <section class="page-hero small-hero">
+    <div class="container">
+      <span class="section-kicker">Category</span>
+      <h1>音乐</h1>
+      <p>音乐 分类收录相关影片，可继续使用搜索、地区、类型和年份筛选。</p>
+    </div>
+  </section>
+
+  <section class="container section-block">
+    <div class="catalog-filter" data-filter-scope="category">
+  <label>
+    <span>搜索</span>
+    <input type="search" data-filter-text placeholder="输入片名、地区、类型、标签">
+  </label>
+  <label>
+    <span>地区</span>
+    <select data-filter-region>
+      <option value="">全部地区</option>
+      <option value="中国大陆">中国大陆</option>
+<option value="美国">美国</option>
+<option value="日本">日本</option>
+<option value="法国">法国</option>
+<option value="韩国">韩国</option>
+<option value="英国">英国</option>
+<option value="意大利 / 法国">意大利 / 法国</option>
+<option value="中国">中国</option>
+<option value="印度">印度</option>
+<option value="古巴">古巴</option>
+<option value="爱尔兰">爱尔兰</option>
+<option value="新加坡 / 马来西亚">新加坡 / 马来西亚</option>
+<option value="中国香港">中国香港</option>
+<option value="瑞典">瑞典</option>
+<option value="意大利">意大利</option>
+<option value="中国台湾">中国台湾</option>
+    </select>
+  </label>
+  <label>
+    <span>类型</span>
+    <select data-filter-type>
+      <option value="">全部类型</option>
+      <option value="电影">电影</option>
+<option value="剧集">剧集</option>
+<option value="电视剧">电视剧</option>
+<option value="综艺 / 纪录片">综艺 / 纪录片</option>
+<option value="动画">动画</option>
+<option value="综艺">综艺</option>
+<option value="电影 / 纪录片">电影 / 纪录片</option>
+    </select>
+  </label>
+  <label>
+    <span>年份</span>
+    <select data-filter-year>
+      <option value="">全部年份</option>
+      <option value="2029">2029</option>
+<option value="2028">2028</option>
+<option value="2027">2027</option>
+<option value="2020-2024">2020-2024</option>
+<option value="2010-2019">2010-2019</option>
+<option value="2000-2009">2000-2009</option>
+<option value="1990-1999">1990-1999</option>
+    </select>
+  </label>
+  <button class="btn btn-outline" type="button" data-filter-reset>重置筛选</button>
+</div>
+    <div class="movie-grid catalog-grid" data-filter-list="category">
+      <article class="movie-card" data-card data-title="摇滚狂花" data-region="中国大陆" data-type="剧集" data-year="2024" data-keywords="摇滚狂花 中国大陆 剧集 音乐, 剧情, 女性 2024 摇滚 中年 母女 追梦 爽剧">
+  <a class="poster-link" href="./movie-0568.html" aria-label="查看摇滚狂花">
+    <img src="./118.jpg" alt="摇滚狂花封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+    </div>
+    <h3><a href="./movie-0568.html">摇滚狂花</a></h3>
+    <p>曾经红极一时的摇滚主唱彭莱，46岁那年发现女儿组了支朋克乐队，而她们互为头号黑粉。</p>
+    <div class="card-tags">
+      <span class="tag">摇滚</span>
+<span class="tag">中年</span>
+<span class="tag">母女</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="上帝是更大的猫王" data-region="美国" data-type="电影" data-year="2024" data-keywords="上帝是更大的猫王 美国 电影 音乐 / 传记 / 奇幻 2024 猫王 乡村教堂 黑人灵歌 信仰 歌迷">
+  <a class="poster-link" href="./movie-0653.html" aria-label="查看上帝是更大的猫王">
+    <img src="./53.jpg" alt="上帝是更大的猫王封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0653.html">上帝是更大的猫王</a></h3>
+    <p>田纳西州一座小教堂的牧师，坚信上帝是猫王，而猫王还活着，就住在教堂地下室里。</p>
+    <div class="card-tags">
+      <span class="tag">猫王</span>
+<span class="tag">乡村教堂</span>
+<span class="tag">黑人灵歌</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="聂耳" data-region="中国" data-type="电影" data-year="2029" data-keywords="聂耳 中国 电影 传记, 音乐, 历史 2029 国歌 青春 革命">
+  <a class="poster-link" href="./movie-1646.html" aria-label="查看聂耳">
+    <img src="./146.jpg" alt="聂耳封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2029</span>
+      <span>中国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1646.html">聂耳</a></h3>
+    <p>聚焦聂耳23岁短暂而绚烂的一生，看他如何从一个爱拉琴的“小赤佬”成长为《义勇军进行曲》的作曲者。</p>
+    <div class="card-tags">
+      <span class="tag">国歌</span>
+<span class="tag">青春</span>
+<span class="tag">革命</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="阿玛蒂女孩" data-region="意大利 / 法国" data-type="电影" data-year="2025" data-keywords="阿玛蒂女孩 意大利 / 法国 电影 剧情 / 历史 / 音乐 2025 制琴世家 二战背景 女性传承 沉默与声音">
+  <a class="poster-link" href="./movie-0324.html" aria-label="查看阿玛蒂女孩">
+    <img src="./24.jpg" alt="阿玛蒂女孩封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>意大利 / 法国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0324.html">阿玛蒂女孩</a></h3>
+    <p>二战期间，制琴名门阿玛蒂家族最后的女孩，用一把看不见的小提琴，救下整个村庄。</p>
+    <div class="card-tags">
+      <span class="tag">制琴世家</span>
+<span class="tag">二战背景</span>
+<span class="tag">女性传承</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="既然出生就环游音乐" data-region="韩国" data-type="综艺 / 纪录片" data-year="2025" data-keywords="既然出生就环游音乐 韩国 综艺 / 纪录片 音乐 / 旅行 / 真人秀 2025 环球旅行 街头表演 独立音乐 治愈 素人">
+  <a class="poster-link" href="./movie-1269.html" aria-label="查看既然出生就环游音乐">
+    <img src="./69.jpg" alt="既然出生就环游音乐封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>韩国</span>
+      <span>综艺 / 纪录片</span>
+    </div>
+    <h3><a href="./movie-1269.html">既然出生就环游音乐</a></h3>
+    <p>七位被生活打败的素人音乐人，带着全部家当和一把吉他，用街头卖唱的钱完成环游世界的梦想。</p>
+    <div class="card-tags">
+      <span class="tag">环球旅行</span>
+<span class="tag">街头表演</span>
+<span class="tag">独立音乐</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="搭错车" data-region="中国大陆" data-type="电影" data-year="2024" data-keywords="搭错车 中国大陆 电影 剧情, 家庭, 音乐 2024 翻拍 父女情 哑父 时代变迁">
+  <a class="poster-link" href="./movie-0198.html" aria-label="查看搭错车">
+    <img src="./48.jpg" alt="搭错车封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0198.html">搭错车</a></h3>
+    <p>拾荒的哑叔捡回一个弃婴，二十年后女孩成了大歌星，却无法在台上叫一声爸。</p>
+    <div class="card-tags">
+      <span class="tag">翻拍</span>
+<span class="tag">父女情</span>
+<span class="tag">哑父</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="命运九重奏" data-region="日本" data-type="动画" data-year="2016" data-keywords="命运九重奏 日本 动画 爱情 / 奇幻 / 音乐 2016 平行世界 九色琴弦 贵族学院 命运恋歌 穿越">
+  <a class="poster-link" href="./movie-0452.html" aria-label="查看命运九重奏">
+    <img src="./2.jpg" alt="命运九重奏封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2016</span>
+      <span>日本</span>
+      <span>动画</span>
+    </div>
+    <h3><a href="./movie-0452.html">命运九重奏</a></h3>
+    <p>普通女高中生被九把被诅咒的魔法琴弦同时选中，必须在九个平行世界中分别改写一段悲剧恋曲。</p>
+    <div class="card-tags">
+      <span class="tag">平行世界</span>
+<span class="tag">九色琴弦</span>
+<span class="tag">贵族学院</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="摇滚校园" data-region="美国" data-type="剧集" data-year="2025" data-keywords="摇滚校园 美国 剧集 喜剧, 音乐 2025 摇滚 教育 师生 热血">
+  <a class="poster-link" href="./movie-0891.html" aria-label="查看摇滚校园">
+    <img src="./141.jpg" alt="摇滚校园封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.1</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>美国</span>
+      <span>剧集</span>
+    </div>
+    <h3><a href="./movie-0891.html">摇滚校园</a></h3>
+    <p>一个过气的摇滚乐手为了生计混进贵族学校当代课老师，却把全班学生培养成了一支地下摇滚乐队。</p>
+    <div class="card-tags">
+      <span class="tag">摇滚</span>
+<span class="tag">教育</span>
+<span class="tag">师生</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="雀斑公主" data-region="日本" data-type="电影" data-year="2024" data-keywords="雀斑公主 日本 电影 动画、奇幻、音乐、青春 2024 社交恐惧 虚拟歌姬 容貌焦虑 网络暴力">
+  <a class="poster-link" href="./movie-0615.html" aria-label="查看雀斑公主">
+    <img src="./15.jpg" alt="雀斑公主封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.1</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>日本</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0615.html">雀斑公主</a></h3>
+    <p>满脸雀斑的自卑少女，在网络世界化身完美歌姬，却被神秘黑客盯上。</p>
+    <div class="card-tags">
+      <span class="tag">社交恐惧</span>
+<span class="tag">虚拟歌姬</span>
+<span class="tag">容貌焦虑</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="想吹口哨我就吹" data-region="中国大陆" data-type="电影" data-year="2024" data-keywords="想吹口哨我就吹 中国大陆 电影 剧情，音乐，励志 2024 留守儿童 口哨 梦想 治愈">
+  <a class="poster-link" href="./movie-0727.html" aria-label="查看想吹口哨我就吹">
+    <img src="./127.jpg" alt="想吹口哨我就吹封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.1</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0727.html">想吹口哨我就吹</a></h3>
+    <p>一个从小被当成“哑巴”的留守儿童，意外发现自己能吹出全世界最美的口哨声，他想用口哨寻找出走多年的母亲。</p>
+    <div class="card-tags">
+      <span class="tag">留守儿童</span>
+<span class="tag">口哨</span>
+<span class="tag">梦想</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="情系拉魂腔" data-region="中国大陆" data-type="电影" data-year="2025" data-keywords="情系拉魂腔 中国大陆 电影 剧情 / 音乐 / 家庭 2025 戏曲 非遗 祖孙情 返乡">
+  <a class="poster-link" href="./movie-1105.html" aria-label="查看情系拉魂腔">
+    <img src="./55.jpg" alt="情系拉魂腔封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.0</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1105.html">情系拉魂腔</a></h3>
+    <p>流浪歌手返乡卖掉将死的爷爷的戏服，却在爷爷嘶哑的拉魂腔里听出了自己身世的秘密。</p>
+    <div class="card-tags">
+      <span class="tag">戏曲</span>
+<span class="tag">非遗</span>
+<span class="tag">祖孙情</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="邦塔颂歌" data-region="印度" data-type="电影" data-year="2024" data-keywords="邦塔颂歌 印度 电影 剧情, 音乐, 历史 2024 村庄 传统音乐 抗争 文化传承 史诗">
+  <a class="poster-link" href="./movie-0325.html" aria-label="查看邦塔颂歌">
+    <img src="./25.jpg" alt="邦塔颂歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.0</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>印度</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0325.html">邦塔颂歌</a></h3>
+    <p>英国殖民者要拆毁邦塔村，村民们用祖传的神秘歌谣唤醒大地之灵，掀起一场无声反抗。</p>
+    <div class="card-tags">
+      <span class="tag">村庄</span>
+<span class="tag">传统音乐</span>
+<span class="tag">抗争</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="琴思" data-region="中国大陆" data-type="电影" data-year="1982" data-keywords="琴思 中国大陆 电影 爱情, 音乐 1982 钢琴 师生恋 时代伤痕 纯爱">
+  <a class="poster-link" href="./movie-0715.html" aria-label="查看琴思">
+    <img src="./115.jpg" alt="琴思封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 9.0</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>1982</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0715.html">琴思</a></h3>
+    <p>一架尘封的旧钢琴，唤醒了音乐学院的师生跨越二十年的禁忌爱恋与无尽悔恨。</p>
+    <div class="card-tags">
+      <span class="tag">钢琴</span>
+<span class="tag">师生恋</span>
+<span class="tag">时代伤痕</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="鼓槌" data-region="古巴" data-type="电影" data-year="2026" data-keywords="鼓槌 古巴 电影 音乐 / 剧情 / 家庭 2026 古巴音乐 父子传承 非洲鼓 哈瓦那 节奏与生命">
+  <a class="poster-link" href="./movie-1596.html" aria-label="查看鼓槌">
+    <img src="./96.jpg" alt="鼓槌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.9</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2026</span>
+      <span>古巴</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1596.html">鼓槌</a></h3>
+    <p>哈瓦那老鼓手失明后，叛逆的儿子接过鼓槌，在街头敲出了父亲一生未敢敲出的节奏。</p>
+    <div class="card-tags">
+      <span class="tag">古巴音乐</span>
+<span class="tag">父子传承</span>
+<span class="tag">非洲鼓</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="此乐不为何人所奏" data-region="法国" data-type="电影" data-year="2025" data-keywords="此乐不为何人所奏 法国 电影 音乐, 剧情 2025 艺术 孤独 存在主义 沉默">
+  <a class="poster-link" href="./movie-0092.html" aria-label="查看此乐不为何人所奏">
+    <img src="./92.jpg" alt="此乐不为何人所奏封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.9</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>法国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0092.html">此乐不为何人所奏</a></h3>
+    <p>在全面禁止音乐的极权社会里，一位聋哑清洁工却通过震动感知到了“非法旋律”。</p>
+    <div class="card-tags">
+      <span class="tag">艺术</span>
+<span class="tag">孤独</span>
+<span class="tag">存在主义</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="超酷" data-region="美国" data-type="电影" data-year="2024" data-keywords="超酷 美国 电影 喜剧、音乐、青春 2024 高中生乐队 社交恐惧 成名一夜 假弹风波 真我觉醒">
+  <a class="poster-link" href="./movie-1701.html" aria-label="查看超酷">
+    <img src="./51.jpg" alt="超酷封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.9</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1701.html">超酷</a></h3>
+    <p>全校最社恐的鼓手被乐队临时推上台假弹，却因为一段“沉浸式空气打鼓”视频意外爆红全网，现在全世界的粉丝都在等他的真鼓声…</p>
+    <div class="card-tags">
+      <span class="tag">高中生乐队</span>
+<span class="tag">社交恐惧</span>
+<span class="tag">成名一夜</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="我们的歌手2015" data-region="中国大陆" data-type="电影" data-year="2023" data-keywords="我们的歌手2015 中国大陆 电影 音乐 / 剧情 2023 怀旧 音乐节 摇滚 中年危机">
+  <a class="poster-link" href="./movie-0591.html" aria-label="查看我们的歌手2015">
+    <img src="./141.jpg" alt="我们的歌手2015封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.9</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0591.html">我们的歌手2015</a></h3>
+    <p>2015年，五个曾红极一时的中年歌手为了还债重组乐队，却发现当年的粉丝如今已是文化局领导。</p>
+    <div class="card-tags">
+      <span class="tag">怀旧</span>
+<span class="tag">音乐节</span>
+<span class="tag">摇滚</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="美味情歌" data-region="中国大陆" data-type="电影" data-year="2023" data-keywords="美味情歌 中国大陆 电影 爱情 / 音乐 2023 街头歌手 餐厅 味觉与听觉 治愈 双向奔赴">
+  <a class="poster-link" href="./movie-1248.html" aria-label="查看美味情歌">
+    <img src="./48.jpg" alt="美味情歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.9</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1248.html">美味情歌</a></h3>
+    <p>一名失去味觉的天才厨师，遇到一个只能用歌声“画”出味道的街头歌手。</p>
+    <div class="card-tags">
+      <span class="tag">街头歌手</span>
+<span class="tag">餐厅</span>
+<span class="tag">味觉与听觉</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="加州独奏" data-region="美国" data-type="电影" data-year="2024" data-keywords="加州独奏 美国 电影 音乐，剧情，文艺 2024 乡村歌手 自我救赎 巡回演唱">
+  <a class="poster-link" href="./movie-1645.html" aria-label="查看加州独奏">
+    <img src="./145.jpg" alt="加州独奏封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1645.html">加州独奏</a></h3>
+    <p>一个过气的乡村歌手，开着破皮卡横穿加州，只为最后一场无人知晓的独奏演出。</p>
+    <div class="card-tags">
+      <span class="tag">乡村歌手</span>
+<span class="tag">自我救赎</span>
+<span class="tag">巡回演唱</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="石头会唱歌" data-region="中国大陆" data-type="电影" data-year="2023" data-keywords="石头会唱歌 中国大陆 电影 剧情，音乐，乡村 2023 留守儿童 音乐梦想 乡村教育 真实改编">
+  <a class="poster-link" href="./movie-0034.html" aria-label="查看石头会唱歌">
+    <img src="./34.jpg" alt="石头会唱歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0034.html">石头会唱歌</a></h3>
+    <p>一个失意的摇滚乐手来到深山支教，发现这里的石头敲击后能发出七个天然音阶。</p>
+    <div class="card-tags">
+      <span class="tag">留守儿童</span>
+<span class="tag">音乐梦想</span>
+<span class="tag">乡村教育</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="激情摇滚" data-region="英国" data-type="电影" data-year="2022" data-keywords="激情摇滚 英国 电影 音乐, 剧情, 传记 2022 摇滚 乐队 1960年代 堕落 创作">
+  <a class="poster-link" href="./movie-0357.html" aria-label="查看激情摇滚">
+    <img src="./57.jpg" alt="激情摇滚封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2022</span>
+      <span>英国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0357.html">激情摇滚</a></h3>
+    <p>虚构的1960年代英国摇滚乐队“The Quills”录制一张传奇专辑的七天，也是他们从兄弟变成仇人的七天。</p>
+    <div class="card-tags">
+      <span class="tag">摇滚</span>
+<span class="tag">乐队</span>
+<span class="tag">1960年代</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="周五夜疯狂" data-region="美国" data-type="电影" data-year="1978" data-keywords="周五夜疯狂 美国 电影 喜剧, 音乐 1978 迪斯科 青春 派对 打工仔">
+  <a class="poster-link" href="./movie-0657.html" aria-label="查看周五夜疯狂">
+    <img src="./57.jpg" alt="周五夜疯狂封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>1978</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0657.html">周五夜疯狂</a></h3>
+    <p>纽约最大的迪斯科舞厅里，一个只想打工还债的清洁工，被迫在舞王挑战赛上顶替出场。</p>
+    <div class="card-tags">
+      <span class="tag">迪斯科</span>
+<span class="tag">青春</span>
+<span class="tag">派对</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="无闻起声色" data-region="中国大陆" data-type="电影" data-year="2025" data-keywords="无闻起声色 中国大陆 电影 剧情, 音乐 2025 聋哑 舞蹈 逆袭 热血">
+  <a class="poster-link" href="./movie-1461.html" aria-label="查看无闻起声色">
+    <img src="./111.jpg" alt="无闻起声色封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.7</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1461.html">无闻起声色</a></h3>
+    <p>失聪女孩决定报考顶尖音乐学院，所有人都说她疯了，直到她“听”到了地板传来的节奏。</p>
+    <div class="card-tags">
+      <span class="tag">聋哑</span>
+<span class="tag">舞蹈</span>
+<span class="tag">逆袭</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="村曲悠扬" data-region="中国大陆" data-type="电影" data-year="2024" data-keywords="村曲悠扬 中国大陆 电影 剧情 / 音乐 2024 农村 民谣 留守老人 治愈">
+  <a class="poster-link" href="./movie-1940.html" aria-label="查看村曲悠扬">
+    <img src="./140.jpg" alt="村曲悠扬封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.7</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1940.html">村曲悠扬</a></h3>
+    <p>一个失意的流行乐队主唱逃回老家山村，却发现村里的留守老人们组建了一支只唱“泥土味儿”民谣的老年乐队。</p>
+    <div class="card-tags">
+      <span class="tag">农村</span>
+<span class="tag">民谣</span>
+<span class="tag">留守老人</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="魔发精灵：乐团在一起" data-region="美国" data-type="电影" data-year="2023" data-keywords="魔发精灵：乐团在一起 美国 电影 动画，音乐，喜剧 2023 歌舞 冒险 合家欢 友情">
+  <a class="poster-link" href="./movie-0549.html" aria-label="查看魔发精灵：乐团在一起">
+    <img src="./99.jpg" alt="魔发精灵：乐团在一起封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.5</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0549.html">魔发精灵：乐团在一起</a></h3>
+    <p>魔发精灵们的乐团重聚巡演，结果被神秘反派用“无声魔法”封印了歌声。</p>
+    <div class="card-tags">
+      <span class="tag">歌舞</span>
+<span class="tag">冒险</span>
+<span class="tag">合家欢</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="萌犬好声音3" data-region="美国" data-type="电影" data-year="2018" data-keywords="萌犬好声音3 美国 电影 喜剧、动画、音乐 2018 狗 选秀 萌宠 音乐比赛 合家欢">
+  <a class="poster-link" href="./movie-1922.html" aria-label="查看萌犬好声音3">
+    <img src="./122.jpg" alt="萌犬好声音3封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.5</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2018</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1922.html">萌犬好声音3</a></h3>
+    <p>狗狗歌唱比赛进入第三季，一只不会唱歌只会Rap的流浪狗，意外闯入决赛并揭开了评委的惊天阴谋。</p>
+    <div class="card-tags">
+      <span class="tag">狗</span>
+<span class="tag">选秀</span>
+<span class="tag">萌宠</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="27岁俱乐部" data-region="美国" data-type="电视剧" data-year="2026" data-keywords="27岁俱乐部 美国 电视剧 悬疑 / 惊悚 / 音乐 2026 都市传说 音乐人 诅咒 超自然 青春">
+  <a class="poster-link" href="./movie-1865.html" aria-label="查看27岁俱乐部">
+    <img src="./65.jpg" alt="27岁俱乐部封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2026</span>
+      <span>美国</span>
+      <span>电视剧</span>
+    </div>
+    <h3><a href="./movie-1865.html">27岁俱乐部</a></h3>
+    <p>全球最火的六位27岁音乐人，在同一天收到了“死亡派对”的邀请函。</p>
+    <div class="card-tags">
+      <span class="tag">都市传说</span>
+<span class="tag">音乐人</span>
+<span class="tag">诅咒</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="蜜蜂少女队2" data-region="中国大陆" data-type="剧集" data-year="2024" data-keywords="蜜蜂少女队2 中国大陆 剧集 喜剧 / 音乐 / 青春 2024 女团 逆袭 偶像养成 搞笑 友情">
+  <a class="poster-link" href="./movie-1820.html" aria-label="查看蜜蜂少女队2">
+    <img src="./20.jpg" alt="蜜蜂少女队2封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+    </div>
+    <h3><a href="./movie-1820.html">蜜蜂少女队2</a></h3>
+    <p>糊穿地心的女团“蜜蜂少女队”为保住练习室，误打误撞参加了一场全是AI虚拟偶像的生存战。</p>
+    <div class="card-tags">
+      <span class="tag">女团</span>
+<span class="tag">逆袭</span>
+<span class="tag">偶像养成</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="风载歌行" data-region="英国" data-type="电影" data-year="2025" data-keywords="风载歌行 英国 电影 剧情 / 音乐 / 公路 2025 民谣 公路片 临终关怀 治愈 英伦风光">
+  <a class="poster-link" href="./movie-0778.html" aria-label="查看风载歌行">
+    <img src="./28.jpg" alt="风载歌行封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>英国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0778.html">风载歌行</a></h3>
+    <p>一群身患绝症的老人组建了一支翻唱乐队，开着大巴唱着歌，去寻找他们各自最想再看一眼的地方。</p>
+    <div class="card-tags">
+      <span class="tag">民谣</span>
+<span class="tag">公路片</span>
+<span class="tag">临终关怀</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="刘三姐" data-region="中国大陆" data-type="电影" data-year="2025" data-keywords="刘三姐 中国大陆 电影 音乐, 剧情 2025 歌舞片 民间传说 女性觉醒 壮族 山歌">
+  <a class="poster-link" href="./movie-1081.html" aria-label="查看刘三姐">
+    <img src="./31.jpg" alt="刘三姐封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1081.html">刘三姐</a></h3>
+    <p>现代改编，广西山歌天才刘三姐对抗不良地产商，用山歌发动全村维权。</p>
+    <div class="card-tags">
+      <span class="tag">歌舞片</span>
+<span class="tag">民间传说</span>
+<span class="tag">女性觉醒</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="今天开始做明星之天使情歌" data-region="中国大陆" data-type="电影" data-year="2023" data-keywords="今天开始做明星之天使情歌 中国大陆 电影 音乐,奇幻 2023 偶像 失声 治愈">
+  <a class="poster-link" href="./movie-1415.html" aria-label="查看今天开始做明星之天使情歌">
+    <img src="./65.jpg" alt="今天开始做明星之天使情歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1415.html">今天开始做明星之天使情歌</a></h3>
+    <p>当红偶像突然失声，一个自称“实习天使”的女孩出现，告诉他：“你这辈子最后一次开口，必须唱给最重要的人听。”</p>
+    <div class="card-tags">
+      <span class="tag">偶像</span>
+<span class="tag">失声</span>
+<span class="tag">治愈</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="沉默的怒吼" data-region="法国" data-type="电影" data-year="2023" data-keywords="沉默的怒吼 法国 电影 剧情 / 历史 / 音乐 2023 二战 合唱团 儿童 抵抗">
+  <a class="poster-link" href="./movie-1557.html" aria-label="查看沉默的怒吼">
+    <img src="./57.jpg" alt="沉默的怒吼封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>法国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1557.html">沉默的怒吼</a></h3>
+    <p>二战期间，一个失语症男孩通过指挥无声合唱团，向盟军传递纳粹 troop 调动情报。</p>
+    <div class="card-tags">
+      <span class="tag">二战</span>
+<span class="tag">合唱团</span>
+<span class="tag">儿童</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="闪耀你的双眼" data-region="韩国" data-type="电视剧" data-year="2022" data-keywords="闪耀你的双眼 韩国 电视剧 爱情 / 音乐 / 青春 2022 选秀题材 视觉障碍 音乐梦想 治愈系 双向奔赴">
+  <a class="poster-link" href="./movie-1429.html" aria-label="查看闪耀你的双眼">
+    <img src="./79.jpg" alt="闪耀你的双眼封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2022</span>
+      <span>韩国</span>
+      <span>电视剧</span>
+    </div>
+    <h3><a href="./movie-1429.html">闪耀你的双眼</a></h3>
+    <p>天才盲人钢琴家与过气偶像练习生组成组合，参加选秀，目标是让所有人“看见”他们的音乐。</p>
+    <div class="card-tags">
+      <span class="tag">选秀题材</span>
+<span class="tag">视觉障碍</span>
+<span class="tag">音乐梦想</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="再会巴黎" data-region="法国" data-type="电影" data-year="2025" data-keywords="再会巴黎 法国 电影 剧情 / 爱情 / 音乐 2025 重逢 老年之恋 错过">
+  <a class="poster-link" href="./movie-0346.html" aria-label="查看再会巴黎">
+    <img src="./46.jpg" alt="再会巴黎封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>法国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0346.html">再会巴黎</a></h3>
+    <p>六十年前约定在巴黎私奔的恋人，因战乱失散，如今白发苍苍的他们在巴黎地铁站偶遇，口袋里都装着当年的车票。</p>
+    <div class="card-tags">
+      <span class="tag">重逢</span>
+<span class="tag">老年之恋</span>
+<span class="tag">错过</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="坂本龙一：杰作" data-region="日本" data-type="电影" data-year="2024" data-keywords="坂本龙一：杰作 日本 电影 纪录片 / 音乐 2024 坂本龙一 钢琴 癌症 绝唱 音乐会">
+  <a class="poster-link" href="./movie-0607.html" aria-label="查看坂本龙一：杰作">
+    <img src="./7.jpg" alt="坂本龙一：杰作封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>日本</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0607.html">坂本龙一：杰作</a></h3>
+    <p>坂本龙一生命最后几个月的独奏纪录片，二十首曲目，每一首都可能是他弹奏的最后一个音。</p>
+    <div class="card-tags">
+      <span class="tag">坂本龙一</span>
+<span class="tag">钢琴</span>
+<span class="tag">癌症</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="披荆斩棘第二季" data-region="中国大陆" data-type="综艺" data-year="2024" data-keywords="披荆斩棘第二季 中国大陆 综艺 真人秀, 竞技, 音乐 2024 舞台竞演 跨界合作 中年励志">
+  <a class="poster-link" href="./movie-1539.html" aria-label="查看披荆斩棘第二季">
+    <img src="./39.jpg" alt="披荆斩棘第二季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>综艺</span>
+    </div>
+    <h3><a href="./movie-1539.html">披荆斩棘第二季</a></h3>
+    <p>34位不同领域的男性艺人重返舞台，通过五轮激烈竞演争夺最终的荣耀团席位。</p>
+    <div class="card-tags">
+      <span class="tag">舞台竞演</span>
+<span class="tag">跨界合作</span>
+<span class="tag">中年励志</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="一曲倾情" data-region="法国" data-type="电影" data-year="2024" data-keywords="一曲倾情 法国 电影 爱情 / 音乐 2024 钢琴 一见钟情 巴黎 艺术疗愈">
+  <a class="poster-link" href="./movie-1424.html" aria-label="查看一曲倾情">
+    <img src="./74.jpg" alt="一曲倾情封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.1</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>法国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1424.html">一曲倾情</a></h3>
+    <p>失明的钢琴天才与内心封闭的街头歌手，在巴黎地铁站因一首即兴曲目相互治愈。</p>
+    <div class="card-tags">
+      <span class="tag">钢琴</span>
+<span class="tag">一见钟情</span>
+<span class="tag">巴黎</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="摇滚电台" data-region="爱尔兰" data-type="电影" data-year="2023" data-keywords="摇滚电台 爱尔兰 电影 剧情 / 音乐 / 喜剧 2023 海盗电台 小镇青年 梦想与现实">
+  <a class="poster-link" href="./movie-0214.html" aria-label="查看摇滚电台">
+    <img src="./64.jpg" alt="摇滚电台封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.1</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>爱尔兰</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0214.html">摇滚电台</a></h3>
+    <p>一座面临拆迁的爱尔兰海边小镇，几个废柴青年在废弃灯塔里非法开播了镇上唯一的摇滚电台。</p>
+    <div class="card-tags">
+      <span class="tag">海盗电台</span>
+<span class="tag">小镇青年</span>
+<span class="tag">梦想与现实</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="美国交响曲" data-region="美国" data-type="电影 / 纪录片" data-year="2023" data-keywords="美国交响曲 美国 电影 / 纪录片 音乐, 传记, 励志 2023 音乐家 复出 梦之安魂曲 现场演奏 治愈">
+  <a class="poster-link" href="./movie-1338.html" aria-label="查看美国交响曲">
+    <img src="./138.jpg" alt="美国交响曲封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.1</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>美国</span>
+      <span>电影 / 纪录片</span>
+    </div>
+    <h3><a href="./movie-1338.html">美国交响曲</a></h3>
+    <p>一位失聪打击乐手，通过骨传导技术重拾音乐，并创作出献给逝去母亲的交响乐《美国》。</p>
+    <div class="card-tags">
+      <span class="tag">音乐家</span>
+<span class="tag">复出</span>
+<span class="tag">梦之安魂曲</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="黑人是王" data-region="美国" data-type="电影" data-year="2020" data-keywords="黑人是王 美国 电影 纪录片, 音乐 2020 非洲未来主义 碧昂丝 视觉专辑 黑豹党">
+  <a class="poster-link" href="./movie-0574.html" aria-label="查看黑人是王">
+    <img src="./124.jpg" alt="黑人是王封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.1</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2020</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0574.html">黑人是王</a></h3>
+    <p>碧昂丝以一张视觉专辑重构黑人群像，将种植园挽歌、黑豹党与大学兄弟会熔成一曲狂想曲。</p>
+    <div class="card-tags">
+      <span class="tag">非洲未来主义</span>
+<span class="tag">碧昂丝</span>
+<span class="tag">视觉专辑</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="滑奏" data-region="意大利 / 法国" data-type="电影" data-year="2025" data-keywords="滑奏 意大利 / 法国 电影 音乐 / 剧情 / 同性 2025 钢琴 师生 救赎 古典乐">
+  <a class="poster-link" href="./movie-0220.html" aria-label="查看滑奏">
+    <img src="./70.jpg" alt="滑奏封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.0</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>意大利 / 法国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0220.html">滑奏</a></h3>
+    <p>一位失去左手的天才钢琴师，收留了一个只会用“滑奏”捣乱的流浪少年。</p>
+    <div class="card-tags">
+      <span class="tag">钢琴</span>
+<span class="tag">师生</span>
+<span class="tag">救赎</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="我们唱着的歌" data-region="新加坡 / 马来西亚" data-type="电影" data-year="2023" data-keywords="我们唱着的歌 新加坡 / 马来西亚 电影 音乐 / 剧情 / 青春 2023 民歌 校园 时代变迁 合唱团">
+  <a class="poster-link" href="./movie-0295.html" aria-label="查看我们唱着的歌">
+    <img src="./145.jpg" alt="我们唱着的歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.0</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>新加坡 / 马来西亚</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0295.html">我们唱着的歌</a></h3>
+    <p>30年后的合唱团重聚，发现当年的校歌里藏着一个无人知晓的约定。</p>
+    <div class="card-tags">
+      <span class="tag">民歌</span>
+<span class="tag">校园</span>
+<span class="tag">时代变迁</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="弦2020" data-region="日本" data-type="电影" data-year="2020" data-keywords="弦2020 日本 电影 音乐、剧情、奇幻 2020 小提琴 瘟疫 独奏 隔离 希望">
+  <a class="poster-link" href="./movie-1876.html" aria-label="查看弦2020">
+    <img src="./76.jpg" alt="弦2020封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.0</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2020</span>
+      <span>日本</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1876.html">弦2020</a></h3>
+    <p>疫情封锁下，失业的小提琴手每天对着阳台拉琴，某天对面楼传来钢琴和声。</p>
+    <div class="card-tags">
+      <span class="tag">小提琴</span>
+<span class="tag">瘟疫</span>
+<span class="tag">独奏</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="琴弦绝响" data-region="中国大陆" data-type="电影" data-year="2018" data-keywords="琴弦绝响 中国大陆 电影 剧情，音乐，历史 2018 古琴 民国 匠人精神 传承 知音">
+  <a class="poster-link" href="./movie-1135.html" aria-label="查看琴弦绝响">
+    <img src="./85.jpg" alt="琴弦绝响封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 8.0</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2018</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1135.html">琴弦绝响</a></h3>
+    <p>民国乱世中，制琴世家的最后传人为了修复一把千年古琴，不得不向炸毁琴坊的日本军官低头，而代价是弹奏一曲亡国音。</p>
+    <div class="card-tags">
+      <span class="tag">古琴</span>
+<span class="tag">民国</span>
+<span class="tag">匠人精神</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="乐韵情缘" data-region="美国" data-type="电影" data-year="2025" data-keywords="乐韵情缘 美国 电影 爱情 / 音乐 / 剧情 2025 音乐治愈 跨阶级恋爱 冬日浪漫">
+  <a class="poster-link" href="./movie-0477.html" aria-label="查看乐韵情缘">
+    <img src="./27.jpg" alt="乐韵情缘封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0477.html">乐韵情缘</a></h3>
+    <p>古典乐大提琴家因车祸失聪，她唯一的听众，是一个在废弃剧院里偷弹走调钢琴的建筑工人。</p>
+    <div class="card-tags">
+      <span class="tag">音乐治愈</span>
+<span class="tag">跨阶级恋爱</span>
+<span class="tag">冬日浪漫</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="曲中情未了" data-region="中国香港" data-type="电影" data-year="2024" data-keywords="曲中情未了 中国香港 电影 爱情 / 音乐 / 剧情 2024 怀旧金曲 粤语老歌 中年爱情 遗憾美学">
+  <a class="poster-link" href="./movie-0336.html" aria-label="查看曲中情未了">
+    <img src="./36.jpg" alt="曲中情未了封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国香港</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0336.html">曲中情未了</a></h3>
+    <p>一首失传30年的粤语老歌的母带被找到，牵扯出两代音乐人未竟的爱恋。</p>
+    <div class="card-tags">
+      <span class="tag">怀旧金曲</span>
+<span class="tag">粤语老歌</span>
+<span class="tag">中年爱情</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="给莫妮卡的华尔滋" data-region="瑞典" data-type="电影" data-year="2024" data-keywords="给莫妮卡的华尔滋 瑞典 电影 爱情, 音乐 2024 音乐 绝症 老年 浪漫">
+  <a class="poster-link" href="./movie-1720.html" aria-label="查看给莫妮卡的华尔滋">
+    <img src="./70.jpg" alt="给莫妮卡的华尔滋封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.8</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>瑞典</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1720.html">给莫妮卡的华尔滋</a></h3>
+    <p>七十岁的钢琴师得知自己将失忆，决定每天为爱人创作一首新的华尔兹对抗遗忘。</p>
+    <div class="card-tags">
+      <span class="tag">音乐</span>
+<span class="tag">绝症</span>
+<span class="tag">老年</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="巴迪霍利传" data-region="美国" data-type="电影" data-year="2026" data-keywords="巴迪霍利传 美国 电影 音乐 / 传记 / 剧情 2026 摇滚传奇 五十年代 遗作之谜">
+  <a class="poster-link" href="./movie-0408.html" aria-label="查看巴迪霍利传">
+    <img src="./108.jpg" alt="巴迪霍利传封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.7</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2026</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0408.html">巴迪霍利传</a></h3>
+    <p>如果不是那场“音乐死去的那天”的飞机失事，摇滚乐的历史会被这个戴眼镜的年轻人改写多少？</p>
+    <div class="card-tags">
+      <span class="tag">摇滚传奇</span>
+<span class="tag">五十年代</span>
+<span class="tag">遗作之谜</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="无名的恋歌" data-region="韩国" data-type="电影" data-year="2024" data-keywords="无名的恋歌 韩国 电影 爱情 / 音乐 / 剧情 2024 乐队 失忆 宿命感 纯爱">
+  <a class="poster-link" href="./movie-1589.html" aria-label="查看无名的恋歌">
+    <img src="./89.jpg" alt="无名的恋歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.7</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>韩国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1589.html">无名的恋歌</a></h3>
+    <p>地下乐队主唱遭遇车祸失忆，唯一记得的是一段模糊的旋律，殊不知那是他写给已故女友的安魂曲。</p>
+    <div class="card-tags">
+      <span class="tag">乐队</span>
+<span class="tag">失忆</span>
+<span class="tag">宿命感</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="汤姆利特" data-region="英国" data-type="电影" data-year="2022" data-keywords="汤姆利特 英国 电影 剧情, 传记, 音乐 2022 民谣歌手 英伦复古 成名之路 孤独">
+  <a class="poster-link" href="./movie-0433.html" aria-label="查看汤姆利特">
+    <img src="./133.jpg" alt="汤姆利特封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.7</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2022</span>
+      <span>英国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0433.html">汤姆利特</a></h3>
+    <p>上世纪60年代，一个口吃的伦敦青年，如何用一把破吉他和沙哑嗓音，意外撬动了整个民谣圈。</p>
+    <div class="card-tags">
+      <span class="tag">民谣歌手</span>
+<span class="tag">英伦复古</span>
+<span class="tag">成名之路</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="英伦梦田" data-region="英国" data-type="电影" data-year="2024" data-keywords="英伦梦田 英国 电影 剧情 / 音乐 / 青春 2024 英伦摇滚 移民家庭 音乐梦想 农场">
+  <a class="poster-link" href="./movie-0534.html" aria-label="查看英伦梦田">
+    <img src="./84.jpg" alt="英伦梦田封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.6</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>英国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0534.html">英伦梦田</a></h3>
+    <p>巴基斯坦裔农场主的女儿想成为摇滚明星，而父亲只想让她嫁人，条件是：用羊粪堆出一座音乐节舞台。</p>
+    <div class="card-tags">
+      <span class="tag">英伦摇滚</span>
+<span class="tag">移民家庭</span>
+<span class="tag">音乐梦想</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="灵魂歌手" data-region="美国" data-type="电影" data-year="2023" data-keywords="灵魂歌手 美国 电影 音乐， 剧情 2023 乐队 梦想 传承 催泪">
+  <a class="poster-link" href="./movie-0120.html" aria-label="查看灵魂歌手">
+    <img src="./120.jpg" alt="灵魂歌手封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.5</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0120.html">灵魂歌手</a></h3>
+    <p>一支90年代的过气摇滚乐队，在贝斯手葬礼上决定重组，却发现彼此都偷了对方的人生。</p>
+    <div class="card-tags">
+      <span class="tag">乐队</span>
+<span class="tag">梦想</span>
+<span class="tag">传承</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="你是世界的起源" data-region="法国" data-type="电影" data-year="2023" data-keywords="你是世界的起源 法国 电影 剧情，哲学，音乐 2023 生命起源 哲学家独白 分娩奇观">
+  <a class="poster-link" href="./movie-1579.html" aria-label="查看你是世界的起源">
+    <img src="./79.jpg" alt="你是世界的起源封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.5</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2023</span>
+      <span>法国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1579.html">你是世界的起源</a></h3>
+    <p>一位女哲学家在录音棚里录完“何为生命”的最后一课，当场决定自然分娩并全程直播。</p>
+    <div class="card-tags">
+      <span class="tag">生命起源</span>
+<span class="tag">哲学家独白</span>
+<span class="tag">分娩奇观</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="史威特贝克之歌" data-region="美国" data-type="电影" data-year="2004" data-keywords="史威特贝克之歌 美国 电影 音乐, 剧情 2004 公路电影 民谣 自我救赎 独立制片">
+  <a class="poster-link" href="./movie-0760.html" aria-label="查看史威特贝克之歌">
+    <img src="./10.jpg" alt="史威特贝克之歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.5</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2004</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0760.html">史威特贝克之歌</a></h3>
+    <p>一名过气乡村歌手带着偷来的吉他，沿着66号公路寻找最后一次登台的机会。</p>
+    <div class="card-tags">
+      <span class="tag">公路电影</span>
+<span class="tag">民谣</span>
+<span class="tag">自我救赎</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="奏出新希望" data-region="中国大陆" data-type="电影" data-year="2026" data-keywords="奏出新希望 中国大陆 电影 剧情 / 音乐 / 励志 2026 交响乐 留守儿童 乡村教师 管弦乐队 逆袭">
+  <a class="poster-link" href="./movie-1433.html" aria-label="查看奏出新希望">
+    <img src="./83.jpg" alt="奏出新希望封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2026</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-1433.html">奏出新希望</a></h3>
+    <p>一个五音不全的乡村体育老师，硬着头皮组建了一支留守儿童交响乐团，目标是打进全国大赛。</p>
+    <div class="card-tags">
+      <span class="tag">交响乐</span>
+<span class="tag">留守儿童</span>
+<span class="tag">乡村教师</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="偶像星愿第二季" data-region="日本" data-type="剧集" data-year="2025" data-keywords="偶像星愿第二季 日本 剧集 动画 / 音乐 / 偶像 2025 男团 娱乐圈 竞争 成长">
+  <a class="poster-link" href="./movie-0296.html" aria-label="查看偶像星愿第二季">
+    <img src="./146.jpg" alt="偶像星愿第二季封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.4</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>日本</span>
+      <span>剧集</span>
+    </div>
+    <h3><a href="./movie-0296.html">偶像星愿第二季</a></h3>
+    <p>登上顶峰的IDOLiSH7迎来最强对手，在资本与粉丝的狂潮中，七个少年必须在保持初心与成为商品之间做出选择。</p>
+    <div class="card-tags">
+      <span class="tag">男团</span>
+<span class="tag">娱乐圈</span>
+<span class="tag">竞争</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="曼图亚弄臣" data-region="意大利" data-type="电影" data-year="2025" data-keywords="曼图亚弄臣 意大利 电影 剧情, 历史, 音乐 2025 歌剧改编 宫廷阴谋 复仇悲歌">
+  <a class="poster-link" href="./movie-0360.html" aria-label="查看曼图亚弄臣">
+    <img src="./60.jpg" alt="曼图亚弄臣封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>意大利</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0360.html">曼图亚弄臣</a></h3>
+    <p>改编自威尔第歌剧，但主角变成了那个丑陋的弄臣：他用笑声掩盖仇恨，用畸形对抗权力。</p>
+    <div class="card-tags">
+      <span class="tag">歌剧改编</span>
+<span class="tag">宫廷阴谋</span>
+<span class="tag">复仇悲歌</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="派对与胜利之歌" data-region="美国" data-type="剧集" data-year="2025" data-keywords="派对与胜利之歌 美国 剧集 喜剧 / 音乐 2025 校园 青春 无厘头 合唱团">
+  <a class="poster-link" href="./movie-1712.html" aria-label="查看派对与胜利之歌">
+    <img src="./62.jpg" alt="派对与胜利之歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>美国</span>
+      <span>剧集</span>
+    </div>
+    <h3><a href="./movie-1712.html">派对与胜利之歌</a></h3>
+    <p>全校最差的“废柴合唱团”为了保住社团经费，决定用一场史上最疯狂的派对来筹集资金，却意外唱出了冠军。</p>
+    <div class="card-tags">
+      <span class="tag">校园</span>
+<span class="tag">青春</span>
+<span class="tag">无厘头</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="七个隆咚锵咚锵" data-region="中国台湾" data-type="电影" data-year="2024" data-keywords="七个隆咚锵咚锵 中国台湾 电影 喜剧，音乐，歌舞 2024 庙会 醒狮 乐队 乌龙">
+  <a class="poster-link" href="./movie-0068.html" aria-label="查看七个隆咚锵咚锵">
+    <img src="./68.jpg" alt="七个隆咚锵咚锵封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.3</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2024</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0068.html">七个隆咚锵咚锵</a></h3>
+    <p>一支废柴醒狮队为了赢回尊严，找来一群乌合之众重组乐队，要用摇滚乐挑战传统庙会。</p>
+    <div class="card-tags">
+      <span class="tag">庙会</span>
+<span class="tag">醒狮</span>
+<span class="tag">乐队</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="吻乐队与公园幽灵" data-region="美国" data-type="电影" data-year="2026" data-keywords="吻乐队与公园幽灵 美国 电影 恐怖、音乐、喜剧 2026 摇滚乐队 游乐园 恶灵 kiss 血浆喜剧">
+  <a class="poster-link" href="./movie-0520.html" aria-label="查看吻乐队与公园幽灵">
+    <img src="./70.jpg" alt="吻乐队与公园幽灵封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2026</span>
+      <span>美国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0520.html">吻乐队与公园幽灵</a></h3>
+    <p>80年代过气摇滚乐队“KISS”受邀在废弃公园开唱，却意外唤醒了沉睡的游乐设施恶灵。</p>
+    <div class="card-tags">
+      <span class="tag">摇滚乐队</span>
+<span class="tag">游乐园</span>
+<span class="tag">恶灵</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="致真理" data-region="韩国" data-type="电影" data-year="2025" data-keywords="致真理 韩国 电影 剧情 / 传记 / 音乐 2025 已故歌手 纪录片形式 遗作 粉丝告别">
+  <a class="poster-link" href="./movie-0148.html" aria-label="查看致真理">
+    <img src="./148.jpg" alt="致真理封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2025</span>
+      <span>韩国</span>
+      <span>电影</span>
+    </div>
+    <h3><a href="./movie-0148.html">致真理</a></h3>
+    <p>一位女歌手生前最后100天的私人影像与未发表歌曲，拼凑出她留给世界的遗书。</p>
+    <div class="card-tags">
+      <span class="tag">已故歌手</span>
+<span class="tag">纪录片形式</span>
+<span class="tag">遗作</span>
+    </div>
+  </div>
+</article>
+<article class="movie-card" data-card data-title="穿越时空的情歌" data-region="泰国" data-type="电视剧" data-year="2022" data-keywords="穿越时空的情歌 泰国 电视剧 爱情， 奇幻， 音乐 2022 穿越 老歌 祖辈 甜虐">
+  <a class="poster-link" href="./movie-1106.html" aria-label="查看穿越时空的情歌">
+    <img src="./56.jpg" alt="穿越时空的情歌封面" loading="lazy">
+    <span class="poster-gradient"></span>
+    <span class="score-badge">热度 7.2</span>
+    <span class="play-chip">播放</span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>2022</span>
+      <span>泰国</span>
+      <span>电视剧</span>
+    </div>
+    <h3><a href="./movie-1106.html">穿越时空的情歌</a></h3>
+    <p>女主每次听奶奶留下的老式情歌就会穿越到1970年代，在那里爱上了正在追求奶奶的年轻爷爷。</p>
+    <div class="card-tags">
+      <span class="tag">穿越</span>
+<span class="tag">老歌</span>
+<span class="tag">祖辈</span>
+    </div>
+  </div>
+</article>
+    </div>
+    <p class="empty-state" data-empty-state hidden>没有找到匹配的影片。</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html">日韩热播视频</a>
+      <p>本页面整合了丰富的日韩影视资源，涵盖高清播放、免费资源和最新电影，每日更新海量内容，为用户打造优质的追剧体验。</p>
+    </div>
+    <div>
+      <h3>快速入口</h3>
+      <a href="./categories.html">分类浏览</a>
+      <a href="./ranking.html">热门排行榜</a>
+      <a href="./all-movies.html">完整片库</a>
+    </div>
+    <div>
+      <h3>频道服务</h3>
+      <a href="./about.html">关于频道</a>
+      <a href="./support.html">服务支持</a>
+      <a href="./copyright.html">版权声明</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 日韩热播视频 · 高清影视内容频道</div>
+</footer>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
